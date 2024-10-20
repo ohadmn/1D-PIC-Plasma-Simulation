@@ -486,37 +486,34 @@ def main():
         if it % 1000 == 0 or it == Nt-1:
             print(f"Iteration {it}, Relative Error: {relative_energy_error[it]}%")
         
-        if it % 50 == 0 or it == Nt-1:
-            fig.savefig(f'simulation_plot_{it}.pdf')
-
-        # if it == 0:
-        #     save_histogram_as_pdf(vp1, vp2, v0_1, v0_2, v_th, v_min, v_max, f'superparticles_distribution_{it}.pdf')
-        #     save_scatter_as_pdf(xp1, vp1, xp2, vp2, L, f'phase_space_{it}.pdf')
+        if it == 0:
+            save_histogram_as_pdf(vp1, vp2, v0_1, v0_2, v_th, v_min, v_max, f'superparticles_distribution_{it}.pdf')
+            save_scatter_as_pdf(xp1, vp1, xp2, vp2, L, f'phase_space_{it}.pdf')
 
 
-        # if it == 105:
-        #     save_histogram_as_pdf(vp1, vp2, v0_1, v0_2, v_th, v_min, v_max, f'superparticles_distribution_{it}.pdf')
-        #     save_scatter_as_pdf(xp1, vp1, xp2, vp2, L, f'phase_space_{it}.pdf')
-        #     save_subplot_as_pdf(axs[1, 1], f'electric_potential_{it}.pdf')
-        #     save_subplot_as_pdf(axs[0, 2], f'energy_time_dependence_{it}.pdf', True)
-        #     save_subplot_as_pdf(axs[1, 0], f'electric_field_grid_{it}.pdf')
-        #     save_subplot_as_pdf(axs[1, 2], f'charge_density_{it}.pdf')
+        if it == 105:
+            save_histogram_as_pdf(vp1, vp2, v0_1, v0_2, v_th, v_min, v_max, f'superparticles_distribution_{it}.pdf')
+            save_scatter_as_pdf(xp1, vp1, xp2, vp2, L, f'phase_space_{it}.pdf')
+            save_subplot_as_pdf(axs[1, 1], f'electric_potential_{it}.pdf')
+            save_subplot_as_pdf(axs[0, 2], f'energy_time_dependence_{it}.pdf', True)
+            save_subplot_as_pdf(axs[1, 0], f'electric_field_grid_{it}.pdf')
+            save_subplot_as_pdf(axs[1, 2], f'charge_density_{it}.pdf')
 
-        # if it == 152:
-        #     save_histogram_as_pdf(vp1, vp2, v0_1, v0_2, v_th, v_min, v_max, f'superparticles_distribution_{it}.pdf')
-        #     save_scatter_as_pdf(xp1, vp1, xp2, vp2, L, f'phase_space_{it}.pdf')
-        #     save_subplot_as_pdf(axs[1, 1], f'electric_potential_{it}.pdf')
-        #     save_subplot_as_pdf(axs[0, 2], f'energy_time_dependence_{it}.pdf', True)
-        #     save_subplot_as_pdf(axs[1, 0], f'electric_field_grid_{it}.pdf')
-        #     save_subplot_as_pdf(axs[1, 2], f'charge_density_{it}.pdf')
+        if it == 152:
+            save_histogram_as_pdf(vp1, vp2, v0_1, v0_2, v_th, v_min, v_max, f'superparticles_distribution_{it}.pdf')
+            save_scatter_as_pdf(xp1, vp1, xp2, vp2, L, f'phase_space_{it}.pdf')
+            save_subplot_as_pdf(axs[1, 1], f'electric_potential_{it}.pdf')
+            save_subplot_as_pdf(axs[0, 2], f'energy_time_dependence_{it}.pdf', True)
+            save_subplot_as_pdf(axs[1, 0], f'electric_field_grid_{it}.pdf')
+            save_subplot_as_pdf(axs[1, 2], f'charge_density_{it}.pdf')
         
-        # if it == 3500:
-        #     save_histogram_as_pdf(vp1, vp2, v0_1, v0_2, v_th, v_min, v_max, f'superparticles_distribution_{it}.pdf')
-        #     save_scatter_as_pdf(xp1, vp1, xp2, vp2, L, f'phase_space_{it}.pdf')
-        #     save_subplot_as_pdf(axs[1, 1], f'electric_potential_{it}.pdf')
-        #     save_subplot_as_pdf(axs[0, 2], f'energy_time_dependence_{it}.pdf', True)
-        #     save_subplot_as_pdf(axs[1, 0], f'electric_field_grid_{it}.pdf')
-        #     save_subplot_as_pdf(axs[1, 2], f'charge_density_{it}.pdf')
+        if it == 3500:
+            save_histogram_as_pdf(vp1, vp2, v0_1, v0_2, v_th, v_min, v_max, f'superparticles_distribution_{it}.pdf')
+            save_scatter_as_pdf(xp1, vp1, xp2, vp2, L, f'phase_space_{it}.pdf')
+            save_subplot_as_pdf(axs[1, 1], f'electric_potential_{it}.pdf')
+            save_subplot_as_pdf(axs[0, 2], f'energy_time_dependence_{it}.pdf', True)
+            save_subplot_as_pdf(axs[1, 0], f'electric_field_grid_{it}.pdf')
+            save_subplot_as_pdf(axs[1, 2], f'charge_density_{it}.pdf')
 
         plt.pause(0.001)      
 
