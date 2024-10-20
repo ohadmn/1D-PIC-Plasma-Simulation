@@ -59,9 +59,9 @@ In both scripts, you can adjust the simulation parameters such as:
 These parameters are defined at the beginning of each script and can be customized to explore different plasma configurations.
 
 ## Results
-[text](<simulation_plot_50.pdf 22-19-00-821.pdf>)
-[text](<simulation_plot_100.pdf 22-19-00-836.pdf>)
-[text](simulation_plot_150.pdf)
+<img width="1004" alt="image" src="https://github.com/user-attachments/assets/1b22b098-4ace-4f02-9cd2-8b35449b5edc">
+<img width="1004" alt="image" src="https://github.com/user-attachments/assets/4de335b6-f822-4be8-b2ef-675893f507f7">
+<img width="1004" alt="image" src="https://github.com/user-attachments/assets/56d4f7da-7807-41b4-b141-e176cbbb5e64">
 
 ## References
 1. Gomez, S., Hoyos, J. H., & Valdivia, J. A. (2023). Particle-in-cell method for plasmas in the one-dimensional electrostatic limit. American Journal of Physics, 91(3), 225-230. doi:10.1119/5.0135515
