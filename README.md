@@ -30,3 +30,39 @@ You can install the dependencies using pip:
 
 ```bash
 pip install numpy scipy matplotlib
+```
+## Usage
+1. **PIC_simulation_1D.py:** This script runs the main PIC simulation of plasma dynamics in one dimension. It initializes two particle beams, calculates charge densities and electric fields, and tracks the time evolution of the system.
+
+Run the simulation with:
+
+```bash
+python PIC_simulation_1D.py
+```
+
+2. **Langmuir_waves_multiproc.py:** This script focuses on simulating Langmuir waves using multiprocessing for improved performance. It analyzes the dispersion relation and compares the results with theoretical predictions.
+
+Run the simulation with:
+
+```bash
+python Langmuir_waves_multiproc.py
+```
+## Simulation Parameters
+In both scripts, you can adjust the simulation parameters such as:
+
+- `L` (System Length)
+- `Ng` (Number of Grid Cells)
+- `N1`, `N2` (Number of Particles in each beam)
+- `Nt` (Number of Time Steps)
+- `v0` (Initial Velocities of the beams)
+- `vth` (Thermal Velocity)
+These parameters are defined at the beginning of each script and can be customized to explore different plasma configurations.
+
+## Results
+[text](<simulation_plot_50.pdf 22-19-00-821.pdf>)
+[text](<simulation_plot_100.pdf 22-19-00-836.pdf>)
+[text](simulation_plot_150.pdf)
+
+## References
+1. Gomez, S., Hoyos, J. H., & Valdivia, J. A. (2023). Particle-in-cell method for plasmas in the one-dimensional electrostatic limit. American Journal of Physics, 91(3), 225-230. doi:10.1119/5.0135515
+2. Cowan, G. (1998). Statistical Data Analysis. Oxford University Press.
